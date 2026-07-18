@@ -171,7 +171,7 @@ nav a:hover {
   background: linear-gradient(90deg, rgba(15, 61, 94, 0.92), rgba(15, 61, 94, 0.72)), url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1400&q=80') center/cover;
   color: var(--white);
   min-height: 70vh;
-  padding: 60px 0:
+  padding: 60px 0;
   display: flex;
   align-items: center;
 }
@@ -208,8 +208,7 @@ nav a:hover {
     .hero-image img{
         width:220px;
     }
-}
-}
+
 
 .eyebrow {
   display: inline-block;
@@ -304,6 +303,32 @@ nav a:hover {
 .section > p {
   max-width: 700px;
   margin: 0 auto 2rem;
+}
+.service-groups{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+    margin-top:40px;
+}
+
+.service-group{
+    background:#fff;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.service-group h3{
+    color:#0f3d5e;
+    margin-bottom:15px;
+}
+
+.service-group ul{
+    padding-left:20px;
+}
+
+.service-group li{
+    margin-bottom:10px;
 }
 
 .cards {
