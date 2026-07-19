@@ -559,3 +559,7 @@ footer {
 .gallery-item:hover img{
     transform:scale(1.08);
 }
+.more-gallery{
+    display:none;
+    margin-top:20px;
+}

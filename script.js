@@ -22,3 +22,15 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+const btn = document.getElementById("galleryBtn");
+const gallery = document.getElementById("moreGallery");
+
+btn.addEventListener("click", function () {
+    if (gallery.style.display === "block") {
+        gallery.style.display = "none";
+        btn.innerHTML = "View More Photos";
+    } else {
+        gallery.style.display = "block";
+        btn.innerHTML = "Show Less";
+    }
+});
