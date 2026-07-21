@@ -16,7 +16,20 @@ document.addEventListener('DOMContentLoaded', () => {
       const service = formData.get('service')?.toString().trim() || 'Not selected';
       const message = formData.get('message')?.toString().trim() || 'No additional details provided';
 
-      const whatsappText = `Hello Adv. Rama Goswami & Associates. I need legal help.%0A%0AName: ${encodeURIComponent(name)}%0APhone: ${encodeURIComponent(phone)}%0AEmail: ${encodeURIComponent(email)}%0AService: ${encodeURIComponent(service)}%0AMessage: ${encodeURIComponent(message)}`;
+      const whatsappText = encodeURIComponent(
+`📌 New Consultation Request
+
+👤 Name: ${name}
+
+📞 Phone: ${phone}
+
+📧 Email: ${email}
+
+⚖️ Service: ${service}
+
+📝 Message:
+${message}`
+);Email: ${encodeURIComponent(email)}%0AService: ${encodeURIComponent(service)}%0AMessage: ${encodeURIComponent(message)}`;
       window.open(`https://wa.me/918218647951?text=${whatsappText}`, '_blank', 'noopener,noreferrer');
       form.reset();
     });
